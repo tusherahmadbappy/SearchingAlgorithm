@@ -32,14 +32,14 @@ int main()
     cout<<"Enter the total number of array: ";
     cin>>num;
 
-    for(i=1;i<=num;i++)
+    for(i=0;i<num;i++)
     {
         cout<<"Number of index[ "<<i<<" ] is: ";
         cin>>arr[i];
     }
-    for(int i=1;i<=num;i++)
+    for(int i=0;i<num;i++)
     {
-        for(j=i+1;j<=num;j++)
+        for(j=i+1;j<num;j++)
         {
             if(arr[i]>arr[j])
             {
@@ -55,7 +55,7 @@ int main()
     cout<<"how value search you want: ";
     cin>>item;
 
-   int result= binary_search(arr,1,num,item);
+   int result= binary_search(arr,0,num,item);
 
    if(result==-1)
    {
